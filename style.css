@@ -7,8 +7,7 @@
 }
 * {
   margin: 0;
-  font-family: "Electronic Arts Text", "Electronic Arts Display", Verdana,
-    sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 16px;
 }
 body {
@@ -44,3 +43,9 @@ h6 {
 }
 
 /*---End CSS Reset---*/
+
+:root {
+  --primary-color: #f7f4eb;
+  --neutral-dark: #2e0000;
+  --neutral-light: #ffffff;
+}
