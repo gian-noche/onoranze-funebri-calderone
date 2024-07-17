@@ -55,7 +55,7 @@ h6 {
 }
 
 .wrapper {
-  width: 80vw;
+  width: 70vw;
   max-width: 1200px;
   margin: auto;
 }
@@ -80,4 +80,33 @@ h6 {
 
 .logo {
   width: 200px;
+}
+
+.hero-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.8)),
+    url(assets/onoranze-funebri-calderone-hero-banner.jpg);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-content {
+  width: 40%;
+}
+
+.hero-content p, h1 {
+  color: var(--neutral-light);
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  padding-bottom: 1rem;
+}
+
+.hero-content p,
+.hero-content em  {
+  font-size: 1.25rem;
 }
