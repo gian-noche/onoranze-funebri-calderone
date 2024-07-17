@@ -53,3 +53,31 @@ h6 {
   --medium: 600;
   --bold: 800;
 }
+
+.wrapper {
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sans-serif {
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-bar-container {
+  background-color: var(--primary-color);
+}
+
+.top-bar {
+  height: 100px;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 200px;
+}
