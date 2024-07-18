@@ -42,6 +42,9 @@ h6 {
   isolation: isolate;
 }
 
+a {
+  text-decoration: none;
+}
 /*---End CSS Reset---*/
 
 :root {
@@ -49,6 +52,7 @@ h6 {
   --secondary-color: #cba663;
   --neutral-dark: #2e0000;
   --neutral-light: #ffffff;
+  --neutral-gray: #b4b4be;
 
   --light: 400;
   --medium: 600;
@@ -65,11 +69,11 @@ h6 {
   font-family: "Open Sans", sans-serif;
 }
 
-.top-bar-container {
+.top-bar-container, footer {
   background-color: var(--primary-color);
 }
 
-.top-bar {
+.top-bar, .footer-container {
   height: 100px;
   margin: auto;
 
@@ -204,7 +208,9 @@ li , p {
 }
 
 /*START I NOSTRI MEZZI*/
-
+.transportations-container {
+  height: 500px;
+}
 /*END I NOSTRI MEZZI*/
 
 .about-container {
@@ -236,4 +242,12 @@ li , p {
 
 .about-content > div > header > h2 {
   text-align: left;
+}
+
+a {
+  color: var(--neutral-dark);
+}
+
+.footer-container > span {
+  color: var(--neutral-gray);
 }
