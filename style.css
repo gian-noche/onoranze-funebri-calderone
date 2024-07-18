@@ -140,7 +140,6 @@ header {
 
 .services {
   height: 400px;
-  border: 1px solid blue;
 
   display: flex;
   flex-flow: column wrap;
@@ -150,16 +149,23 @@ header {
 
 .services-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
 }
 
 .services-list > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .services-list > img {
   width: 300px;
   height: auto;
+}
+
+li {
+  font-size: 1.25rem;
 }
