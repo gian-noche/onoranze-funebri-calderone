@@ -142,7 +142,7 @@ header {
   height: 400px;
 
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -151,6 +151,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
 
   width: 100%;
 }
@@ -181,7 +182,9 @@ li , p {
 }
 
 .contacts-container > .wrapper > header > h2,
-.contacts-container > .wrapper > div > div > p {
+.contacts-container > .wrapper > div > div > p,
+.about-content > div > header > h2,
+.about-content > div > p {
   color: var(--neutral-light);
 }
 
@@ -194,8 +197,43 @@ li , p {
   width: 100%;
 }
 
-.map {
-  height: 250px;
-  width: 300px;
-  background-color: white;
+.map > iframe {
+  height: 300px;
+  width: 400px;
+  border: none;
+}
+
+/*START I NOSTRI MEZZI*/
+
+/*END I NOSTRI MEZZI*/
+
+.about-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.8)),
+    url(assets/sky-sam-schooler-unsplash.jpg);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.about-content > div {
+  width: 55%;
+}
+
+.about-content > div > header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-content > div > header > h2 {
+  text-align: left;
 }
