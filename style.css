@@ -46,6 +46,7 @@ h6 {
 
 :root {
   --primary-color: #f7f4eb;
+  --secondary-color: #cba663;
   --neutral-dark: #2e0000;
   --neutral-light: #ffffff;
 
@@ -106,7 +107,59 @@ h1 {
   padding-bottom: 1rem;
 }
 
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+hr {
+  width: 80px;
+  border-top: 1px solid var(--secondary-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding-bottom: 2rem;
+}
+
+.header-paragraph {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
 .hero-content p,
 .hero-content em  {
   font-size: 1.25rem;
+}
+
+.services {
+  height: 400px;
+  border: 1px solid blue;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.services-list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-list > img {
+  width: 300px;
+  height: auto;
 }
