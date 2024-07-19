@@ -74,13 +74,28 @@ a {
 }
 
 .top-bar, .footer-container {
-  height: 100px;
+  max-height: max-content;
   margin: auto;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
   gap: 2rem;
+}
+
+.top-bar {
+  padding: 1rem 0;
+}
+
+@media (max-width: 1100px) {
+  .top-bar, .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
 }
 
 .logo {
@@ -223,6 +238,11 @@ li , p {
   margin: auto;
 }
 
+.slideshow-container > div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -284,7 +304,7 @@ li , p {
 .about-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-flow: row wrap-reverse;
   gap: 1.5rem;
 
