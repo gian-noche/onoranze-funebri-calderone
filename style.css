@@ -303,8 +303,8 @@ li , p {
 
 /*START I NOSTRI MEZZI*/
 .transportations-container {
-  height: 450px;
   max-height: fit-content;
+  padding-bottom: 2rem;
 }
 
 .transportations-container > header {
@@ -317,6 +317,26 @@ li , p {
   margin: auto;
 
   position: relative;
+}
+
+.card-container > .card > img {
+  width: 80vw;
+}
+
+@media (max-width: 1300px) {
+  .carousel-container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 790px) {
+  .carousel-container {
+    width: 80vw;
+  }
+
+  .nav {
+    display: none;
+  }
 }
 
 .carousel-inner {
