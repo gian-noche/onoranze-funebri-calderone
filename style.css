@@ -45,6 +45,10 @@ h6 {
 a {
   text-decoration: none;
 }
+
+ul {
+  padding-left: 0;
+}
 /*---End CSS Reset---*/
 
 :root {
@@ -194,6 +198,10 @@ header {
   gap: 2rem;
 }
 
+ul:nth-of-type(2) {
+  padding-left: 3rem;
+}
+
 @media (max-width: 1200px) {
   .services-list {
     display: flex;
@@ -214,7 +222,13 @@ header {
   }
 }
 
-.services-list > div {
+@media (max-width: 600px) {
+  ul:nth-of-type(2) {
+    padding-left: 0;
+  }
+}
+
+.services-list > div:last-of-type {
   width: 300px;
   height: auto;
   padding: 1rem;
