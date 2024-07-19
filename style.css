@@ -126,6 +126,18 @@ ul {
   }
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    width: 80vw;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+}
+
 .hero-content p, h1 {
   color: var(--neutral-light);
 }
@@ -223,6 +235,10 @@ ul:nth-of-type(2) {
 }
 
 @media (max-width: 600px) {
+  .services-list > div:nth-child(1) {
+    padding-left: 1rem;
+  }
+
   ul:nth-of-type(2) {
     padding-left: 0;
   }
@@ -295,62 +311,44 @@ li , p {
   padding: 2rem 0;
 }
 
-.slideshow-container {
-  width: 100%;
-  position: relative;
+.carousel-container {
+  width: 1200px;
+  min-height: 200px;
   margin: auto;
+
+  position: relative;
 }
 
-.slideshow-container > div {
-  display: flex;
-  flex-flow: row nowrap;
+.carousel-inner {
+  overflow: hidden;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-.mySlides > img {
-  max-width: 600px;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+.nav button {
+  background: none;
+  border: none;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: var(--neutral-gray);
-  font-weight: var(--light);
-  font-size: 3rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  transform: translateY(-50%);
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.nav .prev {
+  left: -40px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.nav .next {
+  right: -40px;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.track {
+  display: flex;
+  transition: transform 0.3s;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.carousel-container .card-container {
+  width: 600px;
+  flex-shrink: 0;
 }
+
 /*END I NOSTRI MEZZI*/
 
 .about-container {
