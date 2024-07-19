@@ -331,6 +331,10 @@ li , p {
   text-align: left;
 }
 
+.footer-container {
+  padding: 2rem 0;
+}
+
 a {
   color: var(--neutral-dark);
 }
